@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber_reports.html"}, //location for reports
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
-        tags = "@validLogin",
+        tags = "@validLoginWithParameters",
         dryRun = false, // in order to get snippets
         publish = true //to generate public link for reports
 )

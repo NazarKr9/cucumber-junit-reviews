@@ -43,4 +43,14 @@ public class Login_StepDefinitions {
         Assert.assertEquals(expectedHomepageUrl, Driver.getDriver().getCurrentUrl());
     }
 
+
+    @When("the user enters valid username {string}")
+    public void theUserEntersValidUsername_with_params(String username) {
+        seamlesslyPage.username.sendKeys(ConfigurationReader.getProperty("seamlesslyUsername"));
+    }
+
+    @When("the user enters valid password {string}")
+    public void theUserEntersValidPassword_with_params(String password) {
+        seamlesslyPage.password.sendKeys(ConfigurationReader.getProperty("seamlesslyPassword"));
+    }
 }
