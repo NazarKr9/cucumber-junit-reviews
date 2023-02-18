@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber_reports.html" }, //location for reports
+        plugin = {"html:target/cucumber_reports.html"}, //location for reports
         features = "src/test/resources/features",
         glue = "com/cydeo/step_definitions",
         tags = "@validLogin",

@@ -1,5 +1,6 @@
 Feature:  Login functionality tests
-@validLogin
+
+  @validLogin
   Scenario:
     Given the user is on the login page
     When the user enters valid username
